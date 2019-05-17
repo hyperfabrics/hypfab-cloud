@@ -3,7 +3,7 @@
 
 source ./set-env.sh
 
-export COMMERCIALPAPER_CHANNEL_BLOCK_0=./commercialpaperchannel_0.block
+export COMMERCIALPAPER_CHANNEL_BLOCK_0=../commercialpaperchannel_0.block
 
 #1 Fetch the genesis for the channel - this leads to creation of
 # file airlinechannel_0.block
