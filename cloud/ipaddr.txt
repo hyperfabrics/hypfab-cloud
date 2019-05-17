@@ -1,0 +1,32 @@
+# This is just a temp file to hold the IP Address  of Cloud VM #
+
+ipaddr.txt
+==========
+
+Papernet :
+3.16.183.82
+
+Digibank Peer:
+18.224.150.1
+
+Magnetocorp Peer:
+18.191.7.45
+
+Fabric-CA:
+18.208.245.251
+
+
+
+Change the addresses in 
+
+Cloud/config/configtx.yaml
+
+Cloud/set-env.sh
+
+Cloud/bins/Peer/set-env.sh
+
+
+gen-gensis-channel-artifects.sh to generate genesisi blocks
+
+gen-crypto-identiies to generate peer tar files
+
