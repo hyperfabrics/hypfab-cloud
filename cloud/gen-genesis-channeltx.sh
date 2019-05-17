@@ -7,6 +7,7 @@
 
 
 #1 Generate the Genesis block
+mkdir -p ./artefacts
 export FABRIC_CFG_PATH=$PWD
 GENESIS_FILE=./artefacts/commercialpaper-genesis.block
 CHANNEL_NAME=ordererchannel
