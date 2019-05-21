@@ -16,10 +16,10 @@ Fabric-CA:
 18.208.245.251
 
 
-
+Setup:
 Change the addresses in 
 
-Cloud/config/configtx.yaml
+Cloud/configtx.yaml
 
 Cloud/set-env.sh
 
@@ -29,4 +29,28 @@ Cloud/bins/Peer/set-env.sh
 gen-gensis-channel-artifects.sh to generate genesis blocks
 
 gen-crypto-identiies to generate peer tar files
+
+
+
+Orderer Setup:
+
+sudo apt update -y - Execute the command on the orderer instance 
+
+Copy all the files to Orderer instance after generating the configtx and orderer genesis block 
+
+Untar fabric-ca files 
+
+Download new fabric-samples binaries 
+
+chmod 755 orderer
+
+Copy fabric-samples/bin/orderer to /usr/local/bin
+
+orderer version - To check if the orderer installed properly 
+
+./lunch-orderer.sh 
+
+ 
+
+
 
