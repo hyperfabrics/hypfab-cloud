@@ -4,13 +4,13 @@ ipaddr.txt
 ==========
 
 Papernet :
-3.16.183.82
+18.220.118.116
 
 Digibank Peer:
-18.224.150.1
+18.223.169.54
 
 Magnetocorp Peer:
-18.191.7.45
+3.15.46.84
 
 Fabric-CA:
 18.208.245.251
@@ -26,7 +26,7 @@ Cloud/set-env.sh
 Cloud/bins/Peer/set-env.sh
 
 
-gen-gensis-channel-artifects.sh to generate genesisi blocks
+gen-gensis-channel-artifects.sh to generate genesis blocks
 
 gen-crypto-identiies to generate peer tar files
 

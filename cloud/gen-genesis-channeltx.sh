@@ -14,7 +14,7 @@ CHANNEL_NAME=ordererchannel
 echo "====> Generating Genesis"
 configtxgen -profile CommercialPaperOrdererGenesis -channelID $CHANNEL_NAME -outputBlock $GENESIS_FILE
 
-#3 Generate the airline channel transaction file
+#3 Generate the commercialpaper channel transaction file
 CHANNEL_TX_FILE=./artefacts/commercialpaper-channel.tx
 CHANNEL_NAME=commercialpaperchannel
 echo "====> Generating Channel Tx"
