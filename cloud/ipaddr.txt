@@ -90,5 +90,10 @@ sudo ./docker.sh
 
  
 
+NOTE: To genrate tls certificates
+mkdir -p tls
 
+openssl req -new -newkey rsa:4096 -x509 -sha256 -days 1024 -nodes -out server.crt -keyout server.key
+
+openssl req -x509 -new -nodes -key server.key -sha256 -days 1024 -out ca.crt
 
