@@ -10,4 +10,4 @@ export FABRIC_CFG_PATH=$PWD
 
 mkdir -p ledger 
 
-orderer start 2> ./ledger/orderer.log  &
+orderer 2> ./ledger/orderer.log  &
