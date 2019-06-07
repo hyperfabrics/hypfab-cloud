@@ -2,7 +2,7 @@
 # Part of a online course. Please check it out at http://www.acloudfan.com
 
 # EDIT THIS To Control the Peer Setup
-export ORDERER_ADDRESS=18.224.25.94:7050
+export ORDERER_ADDRESS=18.219.4.104:7050
 
 export FABRIC_LOGGING_SPEC=info
 
