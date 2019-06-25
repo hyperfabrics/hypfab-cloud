@@ -1,6 +1,6 @@
-# This is just a temp file to hold the IP Address  of Cloud VM #
+# File contains the IP_Addresses and the instructions to setup of network
 
-ipaddr.txt
+notes.txt
 ==========
 
 Papernet :
@@ -12,8 +12,8 @@ Digibank Peer:
 Magnetocorp Peer:
 18.219.76.190
 
-Fabric-CA:
-18.208.245.251
+#Fabric-CA:
+#18.208.245.251
 
 
 Setup:
@@ -59,6 +59,8 @@ Check orderer log at ledger/orderer.log
 
 
 Peer Setup:
+
+NOTE: Change the ORG names in set-env.sh
 
 sudo apt update -y -Execute the command on the peer instance 
 
