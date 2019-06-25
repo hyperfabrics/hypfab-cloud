@@ -16,7 +16,7 @@ Organizations:
     Name: Papernet
     ID: PapernetMSP
     MSPDir: ./fabric-ca/client/papernet/msp
-    Policies: &OrdererPolicies
+    Policies: &PapernetPolicies
       Readers:
           Type: Signature
           Rule: "OR('PapernetMSP.member')"
@@ -31,7 +31,7 @@ Organizations:
     Name: Digibank
     ID: DigibankMSP
     MSPDir: ./fabric-ca/client/digibank/msp
-    Policies: &AcmePolicies
+    Policies: &DigibankPolicies
       Readers:
           Type: Signature
           Rule: "OR('DigibankMSP.member')"
@@ -42,7 +42,7 @@ Organizations:
           Type: Signature
           Rule: "OR('DigibankMSP.admin')"
     AnchorPeers:
-      - Host: 52.14.106.222
+      - Host: 18.191.153.20
         Port: 7051
       # You may add additional hosts here
 
@@ -51,7 +51,7 @@ Organizations:
     Name: Magnetocorp
     ID: MagnetocorpMSP
     MSPDir: ./fabric-ca/client/magnetocorp/msp
-    Policies: &BudgetPolicies
+    Policies: &MagnetocorpPolicies
       Readers:
           Type: Signature
           Rule: "OR('MagnetocorpMSP.member')"
@@ -62,7 +62,7 @@ Organizations:
           Type: Signature
           Rule: "OR('MagnetocorpMSP.admin')"
     AnchorPeers:
-      - Host: 3.15.10.230
+      - Host: 18.219.76.190
         Port: 7051
       # You may add additional hosts here
 
@@ -73,7 +73,7 @@ Orderer: &OrdererDefaults
   OrdererType: solo
 
   Addresses:
-    - 13.59.205.178:7050
+    - 18.220.137.253:7050
 
     # Policies for Orderer
   Policies:
