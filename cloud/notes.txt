@@ -97,9 +97,29 @@ sudo ./docker.sh
  
 
 NOTE: To genrate tls certificates
-mkdir -p tls
+mkdir -p tls 
 
-openssl req -new -newkey rsa:4096 -x509 -sha256 -days 1024 -nodes -out server.crt -keyout server.key
 
-openssl req -x509 -new -nodes -key server.key -sha256 -days 1024 -out ca.crt
+#Creating private key 
+openssl genrsa -aes256 -out cakey.pem 4096
 
+#creating root certificate 
+openssl req -new -x509 -key  cakey.pem -out cacert.crt -days 3650 
+
+#Root certificate is generated cacert.crt
+
+#Changing the permissions 
+cmhod 755 *
+
+
+#Creating a private key for  a server 
+openssl genrsa -aes256 -out server.pem 2048
+
+
+#creating a server certificate
+openssl req -new -x509 -key server.pem -out server.csr -days 3650 
+
+#signing the request
+openssl ca -in server.csr -out server.crt
+
+#Server certificate is generated cacert.crt
