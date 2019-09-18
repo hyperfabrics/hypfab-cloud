@@ -4,10 +4,10 @@ notes.txt
 ==========
 
 Papernet :
-18.222.200.91
+18.189.6.26
 
 Digibank Peer:
-3.16.156.37
+18.218.128.226
 
 Magnetocorp Peer:
 18.220.144.122
